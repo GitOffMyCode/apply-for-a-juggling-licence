@@ -1,7 +1,7 @@
-{% extends "layout.html" %}
+{% extends "layout-juggling.html" %}
 
 {% block pageTitle %}
-  Check your answers template – {{ serviceName }} – GOV.UK Prototype Kit
+  Apply for a juggling licence
 {% endblock %}
 
 {% block beforeContent %}
@@ -61,9 +61,9 @@
 
       <p>By submitting this application you are confirming that, to the best of your knowledge, the details you are providing are correct.</p>
 
-      <form action="/confirmation" method="post" novalidate>
+      <form action="/juggling-licence/confirmation" method="post" novalidate>
 
-        <input type="hidden" name="answers-checked" value="true">
+        <!-- <input type="hidden" name="answers-checked" value="true"> -->
 
         <button type="submit" class="govuk-button" data-module="govuk-button">
           Accept and send
